@@ -3,7 +3,7 @@ def clean_city_list(cities):
     return sorted(set(cities))
 
 # Mission 2: High Alert Identification
-def analyze_aid_cities(cleaned_cities, previous_intel):
+def analyze_aid_cities(cleaned_cites, previous_intel):
     all_cities = cleaned_cities | previous_intel
     unique_cities = cleaned_cities ^ previous_intel
     high_alert_cities = cleaned_cities & previous_intel
